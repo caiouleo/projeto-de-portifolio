@@ -58,9 +58,6 @@ body {
         text-decoration: none;
 }
 .foto__apresentacao {
+        width: 400px;
         
-        width: 350px;
-        border-radius: 8%;
-        border: 8px solid #368F8B;
-        box-shadow: 0 0 15px #368F8B;
     }
