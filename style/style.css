@@ -1,12 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* paleta de cores do projeto rich black: #001A23 black: #000000 
+dark cyan: #368F8B champagne: #F3DFC1 jasper: #CE5B3B */
+
+root: {
+    --cor-primaria: #000000;
+    --cor-secundaria: #F3DFC1;
+    --cor-terciaria: #001A23;
+    --cor-destaque: #CE5B3B;
+    --cor-destaque-2: #368F8B;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
-/* paleta de cores do projeto rich black: #001A23 blck: #000000 
-dark cyan: #368F8B champagne: #F3DFC1 jasper: #CE5B3B */
 body { 
     /*height: 100vh; (idel quando tinhamos somente texto na pagina)*/
     
@@ -42,7 +51,7 @@ body {
 .apresentacao {
         padding: 10% 15%;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
         gap: 50px;
     }
@@ -66,10 +75,13 @@ body {
 .texto__conteudo__apresentacao {
         font-family:"Montserrat", sans-serif;
         font-size: 1.5rem; 
+        text-align: justify;
+       
 }
 
 .foto__apresentacao {
         width: 400px;
+
         }
 
 .links__apresentacao {
@@ -136,13 +148,17 @@ body {
         position:relative
         bottom: 0;
 }
+/* Estilos sobre mim */
+.texto__sobre__mim {
+        text-indent: 30px;
+}
 
 
 /* Estilos curriculo */
 .curriculo {
         padding: 10% 15%;
         display: flex;
-        align-items: center;
+        align-items: start;
         justify-content: space-between;
         gap: 50px;
     }
@@ -156,3 +172,29 @@ body {
         font-family: "Krona One", sans-serif   ;
         font-size: 2.25rem;
 } 
+
+.texto__curriculo__perfil p {
+        font-family:"Montserrat", sans-serif;
+        font-size: 1.5rem; 
+        margin-bottom: 20px; /* espaço entre parágrafos */
+        /* line-height: 1.6;     melhora a legibilidade */
+        text-align: justify; /* opcional: deixa o texto alinhado dos dois lados */
+        
+        /* text-indent: 30px; opcional: recuo na primeira linha */
+    }
+
+.lista__curriculo__perfil {
+    list-style-type:disc;
+    padding-left: 0;
+    margin: 28px;
+    font-family:"Montserrat", sans-serif;
+    font-size: 1.5rem; margin-bottom: 20px;
+    text-align: justify;
+    display: flex;
+        flex-direction: column;
+        gap: 20px;
+}
+
+.texto__curriculo__perfil strong {
+        color: #CE5B3B; /* destaque para os títulos */
+    }
